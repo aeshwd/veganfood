@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <style>
+        /* style.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+select, button {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+select {
+    font-size: 1em;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+    }
+
+    select, button {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <video id="background-video" src="images/music.mp3" autoplay loop hidden></video>
+
+
+    <nav>
+        <div class="navbar" style="text-align: center; justify-content: center; background-color: white;">
+            <div class="logo" style="text-align: center;">
+              <a href="main.html">  <img src="images/logo.png" alt="logo">  </a>
+            </div>
+
+           
+        </div>
+    </nav>
+    <header>
+        <h1>Select Payment Method</h1>
+    </header>
+    <main>
+        <form id="payment-form">
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Bank Transfer</option>
+                <option value="bank-transfer">Cash on Delivery</option>
+            </select>
+            
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+
+
+      <!--Footer Section-->
+
+      <div class="footer">
+        <h4>Copyright &copy; 2024 | All Rights Reserved Vegan Food</h4>
+      </div>
+    <script src="payment.js"></script>
+</body>
+
+
+</html>

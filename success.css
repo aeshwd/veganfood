@@ -1,0 +1,51 @@
+
+
+/* Container to center content */
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;
+}
+
+/* Content styling */
+.content {
+text-align: center;
+background: white;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Success icon styling */
+.success-icon {
+width: 100px;
+height: 100px;
+margin-bottom: 20px;
+}
+
+/* Message styling */
+.message {
+font-size: 1.8rem;
+margin-bottom: 20px;
+color: #333;
+}
+
+/* Button styling */
+.button {
+font-size: 1.2rem;
+background-color: #28a745; /* Green color for the button */
+color: white;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 4px;
+display: inline-block;
+font-weight: 700;
+transition: background-color 0.3s ease;
+}
+
+.button:hover {
+background-color: #218838; /* Darker green on hover */
+}
+
